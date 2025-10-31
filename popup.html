@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClaritAI</title>
+    <style>
+        body {
+            width: 450px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #667eea;
+            margin-top: 0;
+            font-size: 18px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            resize: vertical;
+            min-height: 80px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5568d3;
+        }
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .result {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            border-radius: 4px;
+        }
+        .result.show {
+            display: block;
+        }
+        .result-text {
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .loading.show {
+            display: block;
+        }
+        .error {
+            display: none;
+            color: #d32f2f;
+            background: #ffebee;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        .error.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 ClaritAI</h1>
+        
+        <form id="form">
+            <label>Text to Simplify:</label>
+            <textarea id="text" placeholder="Paste text here..."></textarea>
+            
+            <label>Language:</label>
+            <select id="lang">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            
+            <button type="submit">✨ Simplify</button>
+        </form>
+
+        <div class="loading" id="loading">Processing...</div>
+        <div class="error" id="error"></div>
+        <div class="result" id="result">
+            <strong>Result:</strong>
+            <div class="result-text" id="resultText"></div>
+            <button id="copyBtn" style="width: auto; margin-top: 8px;">📋 Copy</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

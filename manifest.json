@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "ClaritAI - Universal Reading Companion",
+  "version": "1.0",
+  "description": "Simplify any text on any webpage, translate it to your language",
+    "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ClaritAI: Simplify Text"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  }
+}
