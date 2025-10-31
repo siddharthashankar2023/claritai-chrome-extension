@@ -1,75 +1,48 @@
-# ClaritAI Chrome Extension
+ClaritAI Chrome Extension
+ClaritAI is a Chrome extension that instantly simplifies any highlighted text using Chrome’s built-in AI. Simply select text, adjust the difficulty slider to the preferred level, and get clear, easy explanations. It’s perfect for students, researchers, or anyone browsing the web.
 
-A Chrome Canary-compatible extension that simplifies any highlighted text using Chrome’s built-in AI APIs.
+🚀How to Get Started (Tested on Chrome Canary)
+First, download or clone this repository.
+Next, open Chrome Canary and navigate to chrome://extensions.
+Enable Developer Mode in the top right corner.
+Click on Load unpacked and select the claritai-chrome-extension folder.
+The ClaritAI icon will appear on the toolbar, indicating it’s ready to use.
 
----
+✨Features
+The extension provides AI-powered explanations by analyzing highlighted text on any webpage and delivering simplified summaries.
+A difficulty slider allows adjusting the explanation level from beginner-friendly to expert detail.
+Multi-language support is included through Chrome’s Translator API to offer explanations in various languages.
+All processing is done locally using Chrome’s AI technology, ensuring fast responses and user privacy.
 
-## 🚀 Installation
+🧠How It Works
+The highlighted text along with the chosen difficulty level is sent to Chrome’s AI Prompt API.
+The API returns a tailored explanation matching the selected detail level.
+Optionally, the response can be translated using the built-in Translator API.
 
-1. Download or clone this folder to your computer.
-2. Open **Chrome Canary** and navigate to `chrome://extensions`.
-3. Enable **Developer Mode** (toggle at the top right).
-4. Click **Load unpacked** and select this extension folder.
-5. The ClaritAI icon should show on your toolbar – it’s ready to use!
+❓How to Use
+Highlight text to be simplified.
+Click the ClaritAI toolbar icon.
+Adjust the difficulty slider to easy, medium, or hard to choose the explanation depth.
+The explanation will appear instantly in the popup window.
 
----
+📹Demo Video
+See the extension in action:
+Demo Video – ClaritAI Chrome Extension
 
-## ✨ Features
+🛠️Uninstalling
+To remove the extension, visit chrome://extensions, locate ClaritAI, and select Remove.
 
-- **Instant AI-powered text simplification**  
-  Highlights text on any webpage and generates simplified or detailed explanations.
-  
-- **Difficulty Level Slider**  
-  Adjust the explanation’s depth — from beginner-friendly to expert-level.  
-  - Easy: Basic/simple explanations.  
-  - Medium: Balanced detail.  
-  - Hard: In-depth, technical responses.
+⚡Technology Used
+Built with Chrome Extension Manifest V3.
+Uses Chrome’s Prompt API for AI-powered explanations.
+Employs Translator API for multi-language support.
+All AI computations run locally for enhanced privacy and speed.
 
-- **Multi-language Support**  
-  Integrates Chrome Translator API for multilingual explanations.
+📄License
+The project is licensed under the MIT License.
 
-- **Privacy-focused & Fast**  
-  Utilizes local Chrome AI APIs (Prompt, Summarizer, Translator) ensuring data stays private and provides quick results.
+🙋 Got Questions or Feedback? Contact:
+Developed by Siddhartha Shankar.
+Email: siddharthashankar2023@example.com
 
----
-
-## 🧠 How It Works
-
-The extension sends highlighted text along with your selected difficulty setting to Chrome's AI Prompt API. The AI then returns an explanation that matches the difficulty level you choose.
-
----
-
-## ❓ How to Use
-
-1. Highlight the text you want to simplify on any website.
-2. Click the ClaritAI extension icon.
-3. Adjust the difficulty slider to your preference.
-4. View the AI-generated explanation instantly within the popup.
-
----
-
-## 🛠️ Uninstall
-
-1. Go to `chrome://extensions` in Chrome Canary.  
-2. Find “ClaritAI Chrome Extension”.  
-3. Click **Remove** to uninstall.
-
----
-
-## 📹 Demo
-
-Check out our demo video showcasing installation and key features:  
-[YouTube Demo](YOUR_VIDEO_LINK_HERE)
-
----
-
-## 🔧 Developed By
-
-Your Name — Siddhartha Shankar
-
-## 📄 License
-
-MIT License
-
----
-
+Created for the Google Chrome Built-in AI Challenge 2025 (Devpost)
