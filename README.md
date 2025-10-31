@@ -43,6 +43,6 @@ The project is licensed under the MIT License.
 
 🙋 Got Questions or Feedback? Contact:
 Developed by Siddhartha Shankar.
-Email: siddharthashankar2023@example.com
+Email: siddharthashankar2023@gmail.com
 
 Created for the Google Chrome Built-in AI Challenge 2025 (Devpost)
